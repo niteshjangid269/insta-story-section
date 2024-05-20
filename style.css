@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(63, 165, 196);
+}
+#main #card{
+    overflow: hidden;
+    position: relative;
+    height: 500px;
+    width: 280px;
+    background-color: white;
+    border-radius: 10px;
+}
+#card #stories{
+    padding: 10px;
+    overflow: hidden;
+    height: 100px;
+    width: 100%;
+    border-bottom: 2px solid rgb(226, 191, 191);
+    white-space: nowrap;
+    overflow-x: auto;
+}
+#stories::-webkit-scrollbar{
+    display: none;
+}
+#stories .story{
+    overflow: hidden;
+    margin: 0 3px;
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 2px solid red;
+}
+.story img{
+    height: 100px;
+    width: 100%;
+}
+#card #fullscr{
+    display: none;
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+    position: absolute;
+    z-index: 999;
+    background-size: cover;
+    background-position: center;
+}
+#username{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+}
+#username h4{
+    font-weight: 400;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+#progress{
+    transition-delay: 1000;
+    height: 3.5px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.432);
+    margin-top: 20px;
+}
+#growth{
+    height: 100%;
+    width: 50%;
+    background-color: #fff;
+}
